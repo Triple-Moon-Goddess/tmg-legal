@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Triple Moon Goddess</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --gold: #d4af6a; --gold-bright: #e8c989; --gold-deep: #b8945a; --ink: #f5e8d0; --ink-soft: #c9b896; --bg: #0a0608; --bg-deep: #050304; --bg-card: #110a0d; --line: rgba(212, 175, 106, 0.18); --line-strong: rgba(212, 175, 106, 0.4); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; position: relative; min-height: 100vh; }
+  body::before { content: ''; position: fixed; inset: 0; background: radial-gradient(ellipse at 15% 20%, rgba(212,175,106,0.08) 0%, transparent 45%), radial-gradient(ellipse at 85% 75%, rgba(184,148,90,0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(20,12,8,1) 0%, var(--bg) 70%); pointer-events: none; z-index: 0; }
+  body::after { content: ''; position: fixed; inset: 0; background-image: radial-gradient(1px 1px at 23% 17%, rgba(232,201,137,0.8), transparent), radial-gradient(1px 1px at 67% 83%, rgba(232,201,137,0.6), transparent), radial-gradient(1px 1px at 41% 52%, rgba(232,201,137,0.5), transparent), radial-gradient(1px 1px at 89% 11%, rgba(232,201,137,0.7), transparent), radial-gradient(1px 1px at 12% 73%, rgba(232,201,137,0.4), transparent), radial-gradient(1px 1px at 78% 41%, rgba(232,201,137,0.6), transparent), radial-gradient(2px 2px at 56% 29%, rgba(232,201,137,0.9), transparent), radial-gradient(1px 1px at 33% 88%, rgba(232,201,137,0.5), transparent), radial-gradient(1px 1px at 7% 38%, rgba(232,201,137,0.7), transparent), radial-gradient(2px 2px at 94% 62%, rgba(232,201,137,0.8), transparent); background-size: 100% 100%; pointer-events: none; z-index: 0; opacity: 0.7; animation: twinkle 8s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100%{opacity:0.7} 50%{opacity:0.4} }
+  .container { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 32px; }
+  .policy-header { text-align: center; padding: 32px 0 0; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); line-height: 2; }
+  .policy-header a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-deep); }
+  .policy-header a:hover { color: var(--gold-bright); }
+  .policy-header .version { color: rgba(201,184,150,0.5); margin-top: 4px; }
+  .hero { padding: 100px 0 56px; text-align: center; }
+  .hero-eyebrow { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.32em; color: var(--gold); text-transform: uppercase; margin-bottom: 28px; }
+  .hero-eyebrow::before, .hero-eyebrow::after { content: '✦'; margin: 0 14px; color: var(--gold-deep); font-size: 10px; }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.1; letter-spacing: -0.01em; color: var(--gold-bright); margin-bottom: 24px; }
+  .hero h1 em { font-style: italic; color: var(--ink); font-weight: 300; }
+  .meta { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.2em; color: var(--ink-soft); text-transform: uppercase; margin-top: 32px; }
+  .ornament { margin: 48px auto; width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); position: relative; }
+  .ornament::before { content: '☾'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: var(--bg); padding: 0 18px; color: var(--gold); font-size: 18px; }
+  section.policy { margin-bottom: 56px; padding: 0 8px; }
+  section.policy h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 400; color: var(--gold-bright); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  section.policy h2 .num { font-family: 'Cinzel', serif; font-size: 0.75rem; letter-spacing: 0.24em; color: var(--gold); margin-right: 14px; vertical-align: middle; }
+  section.policy h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 500; color: var(--gold); margin-top: 24px; margin-bottom: 8px; font-style: italic; }
+  section.policy p { color: var(--ink); margin-bottom: 16px; font-size: 0.97rem; }
+  section.policy p strong { color: var(--gold-bright); font-weight: 500; }
+  section.policy a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-deep); transition: color 0.3s ease; }
+  section.policy a:hover { color: var(--gold-bright); }
+  section.policy code { font-family: 'Courier New', monospace; font-size: 0.88em; background: rgba(212,175,106,0.08); padding: 2px 8px; border-radius: 3px; color: var(--gold-bright); }
+  .callout { background: linear-gradient(180deg, rgba(20,12,8,0.7) 0%, rgba(10,6,8,0.95) 100%); border: 1px solid var(--line); border-left: 3px solid var(--gold); padding: 18px 24px; margin: 20px 0; font-size: 0.94rem; color: var(--ink-soft); line-height: 1.65; }
+  .callout strong { color: var(--gold-bright); font-weight: 500; }
+  .never-list { list-style: none; margin: 12px 0 16px 0; }
+  .never-list li { padding: 8px 0 8px 32px; position: relative; color: var(--ink); font-size: 0.97rem; border-bottom: 1px solid var(--line); }
+  .never-list li:last-child { border-bottom: none; }
+  .never-list li::before { content: '✗'; position: absolute; left: 4px; top: 8px; color: var(--gold); font-weight: bold; font-size: 0.95rem; }
+  .processor-card { background: linear-gradient(180deg, rgba(20,12,8,0.5) 0%, rgba(10,6,8,0.85) 100%); border: 1px solid var(--line); padding: 22px 24px; margin-bottom: 16px; transition: border-color 0.4s ease; }
+  .processor-card:hover { border-color: var(--line-strong); }
+  .processor-name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--gold-bright); margin-bottom: 10px; font-style: italic; }
+  .processor-card p { margin-bottom: 10px; font-size: 0.93rem; }
+  .processor-card a { font-family: 'Courier New', monospace; font-size: 0.85rem; border-bottom: none; color: var(--gold); }
+  .processor-card a:hover { color: var(--gold-bright); text-decoration: underline; }
+  .data-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 16px 0 20px; }
+  .data-table th { background: rgba(20,12,8,0.7); color: var(--gold-bright); padding: 12px 16px; text-align: left; border: 1px solid var(--line); font-family: 'Cinzel', serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; }
+  .data-table td { padding: 12px 16px; border: 1px solid var(--line); vertical-align: top; color: var(--ink); }
+  .data-table tr:nth-child(even) td { background: rgba(20,12,8,0.3); }
+  .rights-grid { display: grid; grid-template-columns: 1fr 2fr; border: 1px solid var(--line); margin-bottom: 16px; font-size: 0.93rem; }
+  .rights-grid .cell { padding: 12px 16px; border-bottom: 1px solid var(--line); }
+  .rights-grid .cell:nth-child(odd) { background: rgba(20,12,8,0.5); color: var(--gold-bright); font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; border-right: 1px solid var(--line); }
+  .rights-grid .cell:nth-child(even) { color: var(--ink); }
+  .rights-grid .cell:last-child, .rights-grid .cell:nth-last-child(2) { border-bottom: none; }
+  @media (max-width: 540px) { .rights-grid { grid-template-columns: 1fr; } .rights-grid .cell:nth-child(odd) { border-right: none; } .rights-grid .cell:nth-child(even) { border-bottom: 1px solid var(--line); } }
+  section.policy.summary { background: linear-gradient(180deg, rgba(20,12,8,0.6) 0%, rgba(10,6,8,0.9) 100%); border: 1px solid var(--line); border-left: 3px solid var(--gold); padding: 28px 32px; margin-bottom: 56px; }
+  section.policy.summary h2 { border-bottom: 1px solid var(--line); }
+  section.policy ul.data-list { list-style: none; margin: 10px 0 18px; }
+  section.policy ul.data-list li { position: relative; padding: 9px 0 9px 26px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 0.97rem; }
+  section.policy ul.data-list li:last-child { border-bottom: none; }
+  section.policy ul.data-list li strong { color: var(--gold-bright); font-weight: 500; }
+  section.policy ul.data-list li::before { content: '☾'; position: absolute; left: 2px; top: 9px; color: var(--gold); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="policy-header">
+    <p>Triple Moon Goddess &nbsp;&middot;&nbsp; <a href="https://triplemoongoddess.com" target="_blank" rel="noopener">triplemoongoddess.com</a> &nbsp;&middot;&nbsp; <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a></p>
+    <p class="version">Privacy Policy v2026-08 &nbsp;&middot;&nbsp; Last reviewed August 16, 2026</p>
+  </div>
+
+  <section class="hero">
+    <div class="hero-eyebrow">Privacy Policy</div>
+    <h1>How we hold<br>your <em>data</em>.</h1>
+    <div class="meta"><span>Effective January 1, 2025</span><span>·</span><span>Version 2026-08</span><span>·</span><span>Last reviewed August 16, 2026</span></div>
+    <div class="ornament"></div>
+  </section>
+
+  <section class="policy summary" id="your-data">
+    <h2>Your Data: What We Store and How It's Protected</h2>
+    <p>Triple Moon Goddess is built so your identity and your data are kept apart. No single record holds both.</p>
+    <h3>What we store, and where</h3>
+    <ul class="data-list">
+      <li><strong>Your email</strong> is stored once, on its own, in an encrypted vault. It is looked up only through a one-way code, never searched as plain text, and is never copied into your other records.</li>
+      <li><strong>Your birth data</strong> (date, time, and place) is stored once, on its own, in a separate encrypted vault, used only to generate your chart, transits, and readings.</li>
+      <li><strong>We do not store your name.</strong> The only time a name is held is if you sign a legal waiver — and then only as an encrypted signature tied to that consent.</li>
+      <li>Everything else in the app is linked together only by an anonymous access code — never by your name, email, or birth data.</li>
+    </ul>
+    <h3>Encryption</h3>
+    <p>Your email and birth data are encrypted at rest (Google Cloud KMS) and in transit (HTTPS). We never sell your data.</p>
+    <h3>Your birth data stays in the vault</h3>
+    <p>Your birth data never leaves its encrypted vault to be shown in the apps — not to other users, and not to practitioners. The calculations that use it run on our secure servers, not in your browser. The one exception: Lisa, the site owner, can view your birth data through an internal admin tool solely to correct a data-entry error, such as a mistyped birth date. You remain the owner of your data.</p>
+    <h3>Research</h3>
+    <p>Your birth data is never used for research. Any anonymous signals we keep for research contain no name, no email, and no birth data.</p>
+    <h3>Deleting your data</h3>
+    <p>You can delete your data at any time. After you delete, anything retained for research is anonymous — no name, email, or birth data remains, so nothing links back to you.</p>
+    <h3>Built-in enforcement</h3>
+    <p>These rules are enforced automatically in our software: an internal privacy check blocks any change that would store a client's name, search an email in plain text, or move birth data outside its vault.</p>
+  </section>
+
+  <section class="policy" id="who-we-are">
+    <h2><span class="num">I</span>Who We Are</h2>
+    <p>Triple Moon Goddess is a wellness journaling and medical astrology application operated by <strong>Lisa Hagan</strong> ("we", "us", "our"). For all data protection enquiries, please contact:</p>
+    <p>
+      <strong>Triple Moon Goddess</strong><br>
+      Lisa Hagan<br>
+      3654 Thornton Ave, Unit #748<br>
+      Fremont, CA 94536<br>
+      United States<br>
+      Email: <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a><br>
+      Website: <a href="https://triplemoongoddess.com" target="_blank" rel="noopener">triplemoongoddess.com</a>
+    </p>
+    <div class="callout">We are a sole operator and do not currently have a designated Data Protection Officer (DPO). If you are in the EU/EEA and your enquiry is unresolved, you have the right to lodge a complaint with your local supervisory authority.</div>
+  </section>
+
+  <section class="policy" id="scope">
+    <h2><span class="num">II</span>Who This Policy Applies To</h2>
+    <p>This policy applies to all users of the Triple Moon Goddess ecosystem: the natal chart generator, the Health Journal (PWA), the Health Blueprint app, the Tea Moon app, and the phone widget application, together with the paid practitioner applications (Integrative Practitioner, Soul Pattern, and Constitutional Health) and any associated email communications.</p>
+    <p>This policy applies to users worldwide. Where additional rights apply in your jurisdiction — EU/EEA/UK (GDPR), California (CCPA), Brazil (LGPD), Canada (PIPEDA), Australia (Privacy Act) — those rights are addressed in Section XII.</p>
+  </section>
+
+  <section class="policy" id="data-collected">
+    <h2><span class="num">III</span>What Data We Collect</h2>
+    <h3>Identity &amp; Contact Data</h3>
+    <p>Collected only if you voluntarily provide it:</p>
+    <table class="data-table"><thead><tr><th>Data</th><th>Purpose</th></tr></thead><tbody><tr><td>Email address</td><td>Account lookup, chart delivery, reminders only</td></tr><tr><td>Birth date, time &amp; location</td><td>Natal chart generation</td></tr></tbody></table>
+    <div class="callout"><strong>We do not store your name.</strong> Your email and your birth data are each stored once, on their own, in separate encrypted vaults (Google Cloud KMS), reachable only by our secure server functions — your email through a one-way lookup code, never as searchable plain text. Everything else in the app is linked only by an anonymous access code, so no single record holds both your identity and your health data.</div>
+    <h3>Health &amp; Wellness Data (Special Category)</h3>
+    <p>This is health data under GDPR Article 9. It includes daily body scores (mood, energy, optimism, physical/mental stamina), sleep data, symptoms, medication and supplement logs, food and beverage log, tongue observations (Traditional Chinese Medicine), personal notes and reflections, and astrology transit journal responses.</p>
+    <h3>Technical &amp; Device Data</h3>
+    <p>Anonymous Firebase Authentication UID, FCM push notification tokens, app preferences (tab config, reminder times, food plan, house system), timezone, and rate-limit counters keyed by anonymous UID.</p>
+    <p>We do not collect precise device geo-location (GPS). The only location data we process is the birth location you enter for natal chart calculation — it is supplied by you, not derived from your device's location services.</p>
+    <h3>Usage Data</h3>
+    <p>We use Firebase (Google) infrastructure. Firebase collects basic performance and crash data per its own terms. We do not use Google Analytics, Facebook Pixel, any advertising trackers, session replay tools, or heatmap software.</p>
+  </section>
+
+  <section class="policy" id="use">
+    <h2><span class="num">IV</span>How We Use Your Data &amp; Legal Basis</h2>
+    <h3>Necessary Processing</h3>
+    <p>Legal basis: Legitimate interests / Contract (GDPR Art 6(1)(b) and (f)) — providing app functionality, authentication, push notifications, email reminders, and rate limiting.</p>
+    <h3>Health Data Processing</h3>
+    <p>Legal basis: Explicit consent (GDPR Art 9(2)(a)) — storing/displaying journal entries, generating PDF exports, enabling Practitioner Mode. You may withdraw consent at any time via <strong>Settings → Danger Zone</strong>.</p>
+    <h3>AI Processing</h3>
+    <p>Legal basis: Explicit consent (GDPR Art 6(1)(a) and Art 9(2)(a)). AI features are entirely optional and require deliberate setup. New users receive <strong>5 complimentary AI uses</strong>; after that, AI is only available if you choose to add your own Anthropic API token in <strong>Settings → AI</strong>. Removing your token immediately and permanently disables all AI processing — no token means no data is ever sent to Anthropic.</p>
+    <p>When any AI feature is used, only the data relevant to that interaction is sent to Anthropic's API. No name, email, or access code is ever included. Anthropic does not use this data to train models. There are three AI touchpoints across the apps, each with a just-in-time privacy notice displayed before data is sent:</p>
+    <table class="data-table"><thead><tr><th>Location</th><th>Trigger</th><th>Data sent to Anthropic</th><th>Notice type</th></tr></thead><tbody>
+      <tr><td><strong>Journal — AI Dialog</strong> (<code>SummaryTab.tsx</code>)</td><td>First message send per session (including starter chips)</td><td>Message text plus today’s journal context: health scores, symptoms, notes, astrology data</td><td>Modal on first send; sessionStorage key <code>tmg_ai_dialog_noticed</code> suppresses on subsequent messages</td></tr>
+      <tr><td><strong>Practitioner — AI Summary</strong> (<code>JournalTab.tsx</code>)</td><td>Tab load when AI summaries are present</td><td>Client session data: pattern scores, comparison signals, practitioner notes, astrological context. No client name, email, or birth data.</td><td>Inline notice card above entry list; summaries hidden until acknowledged. SessionStorage key <code>tmg_practitioner_summary_noticed</code>.</td></tr>
+      <tr><td><strong>Practitioner — AI Dialog</strong> (<code>AITab.tsx</code>)</td><td>First message send per session (Send button or Enter key)</td><td>Message text plus session context: pattern scores, comparison signals, practitioner notes, astrological outputs. No client name, email, or birth data.</td><td>Modal on first send; sessionStorage key <code>tmg_practitioner_dialog_noticed</code> suppresses on subsequent messages</td></tr>
+    </tbody></table>
+    <div class="callout">All three sessionStorage notice keys expire naturally when the browser tab closes, so the notice reappears each new session. This keeps disclosure fresh without requiring repeated acknowledgement within a single working session.</div>
+    <h3>What We Never Do</h3>
+    <ul class="never-list"><li>Sell your personal data</li><li>Share your data with advertisers</li><li>Use your health data to train AI models</li><li>Combine your identity with your health records in a single document</li><li>Send client names, emails, or birth data to any AI processor</li></ul>
+  </section>
+
+  <section class="policy" id="processors">
+    <h2><span class="num">V</span>Third-Party Processors</h2>
+    <div class="processor-card"><div class="processor-name">Google Firebase (Alphabet Inc.)</div><p>Provides database, authentication, hosting, and cloud functions. Stores all Firestore data, authentication UIDs, and push tokens across US and EU data centres.</p><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></div>
+    <div class="processor-card"><div class="processor-name">Anthropic, PBC</div><p>Provides the Claude AI API for optional AI summaries and AI dialog features. Data sent varies by touchpoint — see Section IV for the full breakdown. No name, email, or access code is ever included. Anthropic does not use this data to train models. This processor is only engaged when an AI feature is actively used by a user who has completed the opt-in setup.</p><a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></div>
+    <div class="processor-card"><div class="processor-name">Google Cloud Run (Alphabet Inc.)</div><p>Hosts our Swiss Ephemeris calculation API for astrological positions. Data sent: birth date, time, and location — not linked to your identity. Migrated from Railway to Google Cloud Run in May 2026.</p><a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">cloud.google.com/terms/cloud-privacy-notice</a></div>
+    <div class="processor-card"><div class="processor-name">Google Sign-In (Alphabet Inc.)</div><p>Practitioner, partner, and administrator accounts sign in with Google. We receive only your email address and your Google account identifier. We do not request or receive your Gmail messages, Google Drive files, Google Contacts, or your own personal calendar. We do not store your Google display name or profile photo. Your email address is stored as a one-way lookup hash, with the address itself held in a separate encrypted vault. Individual seekers do not use Google Sign-In — the free chart, journal, widget, Tea Moon, and intake apps use anonymous authentication with no Google account involved. See Section VI for full detail.</p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></div>
+    <div class="processor-card"><div class="processor-name">Google Calendar API (Alphabet Inc.)</div><p>Used to schedule sessions. Access is authorised once by Lisa Hagan for her own Triple Moon Goddess business calendar — no client or practitioner is ever asked to connect their own Google account for scheduling. When you book a session we check availability on that calendar and create the appointment. <strong>Your email address is sent to Google Calendar as an event attendee</strong> so that you receive the invitation and the video-conference link. Event guests cannot see other guests, invite others, or modify the event. No health data, journal content, or birth data is ever sent to Google Calendar. See Section VI for full detail.</p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></div>
+    <div class="processor-card"><div class="processor-name">Email delivery (authenticated SMTP)</div><p>Reminder emails, chart deliveries, booking confirmations, and PDF attachments are sent from our own authenticated mail account over SMTP. <strong>We do not use the Gmail API and have no access to any mailbox other than our own sending account.</strong> PDFs are generated either in your own browser or by our secure server functions, and are delivered as email attachments or as expiring Firebase Storage links. <strong>We do not use Google Drive.</strong></p></div>
+  </section>
+
+  <section class="policy" id="google-user-data">
+    <h2><span class="num">VI</span>Google User Data and Limited Use</h2>
+    <p>This section describes in full how Triple Moon Goddess accesses, uses, stores, and shares data obtained through Google APIs ("Google user data"). It is provided in addition to the general disclosures elsewhere in this policy.</p>
+
+    <h3>The Google permissions we request</h3>
+    <table class="data-table"><thead><tr><th>Google permission</th><th>Who grants it</th><th>What we receive</th><th>Why</th></tr></thead><tbody>
+      <tr><td><code>openid</code>, <code>email</code>, <code>profile</code> — Google Sign-In</td><td>Practitioners, partners, and administrators signing in to the paid practitioner applications</td><td>Your email address and your Google account identifier</td><td>To create and authenticate your practitioner account and match it to your subscription</td></tr>
+      <tr><td><code>https://www.googleapis.com/auth/calendar</code></td><td>Lisa Hagan only, once, for her own Triple Moon Goddess business calendar</td><td>Read and write access to that one business calendar</td><td>To check appointment availability and create session bookings with a video-conference link</td></tr>
+    </tbody></table>
+    <p>We request no other Google permissions. <strong>We do not request or receive access to your Gmail, your Google Drive, your Google Contacts, your Google Photos, or your own personal Google Calendar.</strong> Individual seekers — users of the free chart, journal, widget, Tea Moon, and intake apps — are never asked to sign in with Google at all; those apps use anonymous authentication.</p>
+
+    <h3>How Google user data is used</h3>
+    <ul class="data-list">
+      <li><strong>Your email address from Google Sign-In</strong> identifies your practitioner account, matches it to your subscription, and allows us to send you service email about your account. It is stored as a one-way SHA-256 lookup hash on your account record, with the address itself encrypted in a separate vault under our Google Cloud KMS key.</li>
+      <li><strong>Your Google account identifier</strong> is used as the internal key for your account records. It is not shared with anyone.</li>
+      <li><strong>Calendar access</strong> is used only to read availability and to create, update, or cancel Triple Moon Goddess session events on Lisa Hagan's business calendar. When you book a session, your email address is added to that event as an attendee so you receive the invitation and video link. Event guests cannot see other guests, invite others, or modify the event. No health data, journal content, or birth data is ever written to a calendar event.</li>
+    </ul>
+
+    <h3>What we never do with Google user data</h3>
+    <ul class="never-list">
+      <li>Sell it, or transfer it to data brokers, information resellers, or any other party for sale</li>
+      <li>Use it for advertising, retargeting, or any other advertising or marketing purpose</li>
+      <li>Use it to train, fine-tune, or improve any artificial intelligence or machine learning model, whether ours or a third party's</li>
+      <li>Send it to Anthropic or to any other AI processor</li>
+      <li>Allow any human to read it, except with your explicit consent, where necessary for security purposes such as investigating abuse, to comply with applicable law, or where the data has been aggregated and de-identified</li>
+      <li>Transfer it to any third party, except as strictly necessary to provide or improve the feature you requested, to comply with applicable law, or in connection with a merger, acquisition, or sale of assets — in which case we will give notice and obtain consent where required</li>
+    </ul>
+
+    <h3>Retention and deletion of Google user data</h3>
+    <p>Google user data is retained only for as long as your practitioner account is active. When your account is cancelled or deleted, the associated email hash and encrypted email record are deleted and the Google account identifier ceases to be used. To request deletion of any Google user data we hold about you, email <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a>. You may revoke Triple Moon Goddess's access to your Google Account at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. The Google Calendar authorisation is held by Lisa Hagan and may be revoked by her the same way; revoking it immediately ends all Triple Moon Goddess calendar access.</p>
+
+    <h3>Limited Use commitment</h3>
+    <div class="callout"><strong>Triple Moon Goddess's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</strong></div>
+    <p>If we change the way this application uses Google user data, we will update this section, update the effective date at the top of this policy, and notify affected users by email before the change takes effect.</p>
+  </section>
+
+  <section class="policy" id="transfers">
+    <h2><span class="num">VII</span>International Data Transfers</h2>
+    <p>Our primary infrastructure is based in the United States. EU/EEA/UK transfers are covered by Standard Contractual Clauses (SCCs) and, for Firebase, participation in the EU-US Data Privacy Framework. You may request a copy of the relevant transfer mechanisms by emailing <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a>.</p>
+  </section>
+
+  <section class="policy" id="retention">
+    <h2><span class="num">VIII</span>Data Retention</h2>
+    <table class="data-table"><thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead><tbody><tr><td>Journal entries &amp; health data</td><td>Indefinitely until you delete via Settings → Danger Zone</td></tr><tr><td>Email (identity vault)</td><td>Until deletion request or chart deletion</td></tr><tr><td>Notification log</td><td>Auto-deleted after 3 days</td></tr><tr><td>AI rate limit counters</td><td>Expire naturally as new days begin (keyed by date)</td></tr><tr><td>FCM push tokens</td><td>Until push disabled or token becomes invalid</td></tr><tr><td>Email queue</td><td>Processed immediately; not retained after delivery</td></tr></tbody></table>
+  </section>
+
+  <section class="policy" id="security">
+    <h2><span class="num">IX</span>Security Measures</h2>
+    <h3>Encryption of Sensitive Data (Managed-Key Cloud KMS)</h3>
+    <p>Your most sensitive data — your email, your birth data, and, for practitioner accounts, client clinical notes and psychological readings — is encrypted at rest with a dedicated Google Cloud Key Management Service (KMS) key. The key lives server-side only. Encryption and decryption happen inside our Cloud Functions; the key is never sent to, or held by, any browser.</p>
+    <p><strong>Your email and your birth data are each stored once, in their own access-controlled vault.</strong> Email is encrypted in one vault and located only through a one-way lookup code (a SHA-256 hash of your email) — it is never stored or searched as plain text. Birth data is encrypted in a separate vault, keyed only by your anonymous access code. Neither vault is readable by the apps or by other users; only our server functions can decrypt, and only for a permitted purpose such as sending your chart by email.</p>
+    <p><strong>Practitioner-entered client data</strong> — client email, clinical notes, and psychological readings — is encrypted with the same managed key on the server at the moment it is saved, and the plaintext is removed. Even if the database were fully compromised, these records would be unreadable, because the key is not in the database and never leaves the server. A practitioner can decrypt only the specific clients assigned to them: every decryption is gated server-side by the practitioner's authenticated account plus proof they own that client assignment (or by an authorised admin).</p>
+    <p><strong>The earlier passphrase-based, in-browser encryption scheme has been retired.</strong> All sensitive data written today uses the managed-key model above. A small amount of data sealed under the old passphrase scheme before migration is not recoverable and is clearly marked as such where it appears.</p>
+    <p>The following data is protected by Firebase Security Rules rather than field-level encryption: natal chart outputs, client intake answers, intake match results, journal entries, and Soul module session data.</p>
+    <h3>Infrastructure Security</h3>
+    <p>All data transmitted over HTTPS (TLS 1.2+). Data is encrypted at rest by default (Firebase/Firestore), with the sensitive fields above additionally encrypted under our own Cloud KMS key. Your birth data is write-only from the browser — it can be sent in to be stored, but no app or user can read raw birth data back; all chart, transit, and reading calculations run on our secure servers. API keys are stored in Google Cloud Secret Manager — never in code. Firebase Security Rules restrict database access to each authenticated user's own data. The admin portal is restricted to a single authorised account, and admin access to raw birth data (used only to correct a data-entry error) is audit-logged. Identity data and health data are held in separate collections — no single record contains both.</p>
+    <div class="callout">No security system is 100% impenetrable. If you believe your data has been compromised, contact <strong>Lisa@TripleMoonGoddess.com</strong> immediately.</div>
+    <h3>Data Breach Notification</h3>
+    <p>If a personal data breach occurs, we will act without undue delay to investigate and contain it. Where the breach is likely to result in a risk to your rights and freedoms, we will notify the relevant supervisory authority within 72 hours of becoming aware of it, in line with GDPR Article 33. Where the breach is likely to result in a high risk to you, we will also notify you directly without undue delay, in line with GDPR Article 34. For users in the United States, we will provide notification as required by applicable state breach-notification laws, including California Civil Code §§ 1798.29 and 1798.82. Because your identity data and your health data are held in physically separate Firestore collections, a breach affecting one does not necessarily expose the other.</p>
+  </section>
+
+  <section class="policy" id="cookies">
+    <h2><span class="num">X</span>Cookies and Local Storage</h2>
+    <p>We do not use advertising cookies or tracking pixels. We use browser local storage and sessionStorage only for strictly necessary app functions:</p>
+    <table class="data-table"><thead><tr><th>Key / Purpose</th><th>Storage type</th><th>Who it applies to</th></tr></thead><tbody>
+      <tr><td>Access code (session continuity)</td><td>localStorage</td><td>All users</td></tr>
+      <tr><td>Consent decision and timestamp</td><td>localStorage</td><td>All users</td></tr>
+      <tr><td>Firebase authentication session cache</td><td>localStorage</td><td>All users</td></tr>
+      <tr><td>Widget email preference (phone widget only)</td><td>localStorage</td><td>Widget users</td></tr>
+      <tr><td><code>tmg_minor_chart</code> — natal chart data for the age-appropriate 13–17 experience. Device-local only; no data written to any TMG server.</td><td>localStorage</td><td>Users aged 13–17 only</td></tr>
+      <tr><td><code>tmg_ai_dialog_noticed</code> — records that the Journal AI Dialog privacy notice has been shown this session.</td><td>sessionStorage</td><td>Journal users who use AI Dialog</td></tr>
+      <tr><td><code>tmg_practitioner_summary_noticed</code> — records that the Practitioner AI Summary privacy notice has been acknowledged this session.</td><td>sessionStorage</td><td>Practitioners with AI summaries enabled</td></tr>
+      <tr><td><code>tmg_practitioner_dialog_noticed</code> — records that the Practitioner AI Dialog privacy notice has been shown this session.</td><td>sessionStorage</td><td>Practitioners who use AI Dialog</td></tr>
+    </tbody></table>
+    <p>No third-party tracking cookies are used. None of the above keys are shared with any third party. SessionStorage keys expire automatically when the browser tab closes.</p>
+  </section>
+
+  <section class="policy" id="children">
+    <h2><span class="num">XI</span>Children's Privacy</h2>
+    <p>The full TMG platform — Health Journal, Tea Moon, Health Blueprint, and practitioner apps — is intended for adults aged 18 and over. We do not knowingly collect personal data from children under 13 (or under 16 in the EU/EEA). If you believe a child under 13 has submitted data to us, please contact <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a> and we will delete it immediately.</p>
+    <h3>Age-Appropriate Chart Experience for 13–17</h3>
+    <p>The main natal chart app offers a limited, age-appropriate experience for users aged 13–17, with parental consent required before any chart is generated. This experience is designed with privacy as the default: <strong>no account is created, no email is collected, and no data is written to any server</strong>. The natal chart is calculated using the Swiss Ephemeris API (birth date, time, and location are transmitted for computation only and not stored by TMG) and stored locally on the user's device under the key <code>tmg_minor_chart</code> (see Section X). The chart can be cleared at any time by tapping "New Chart." Secondary apps — Health Journal, Tea Moon, Health Blueprint, and the practitioner apps — are not available to users under 18.</p>
+    <p>Parental or guardian consent is collected within the app before chart generation for any user whose birth date indicates they are between 13 and 17. By providing consent, the parent or guardian confirms they have reviewed and agreed to this privacy policy on behalf of the minor.</p>
+  </section>
+
+  <section class="policy" id="rights">
+    <h2><span class="num">XII</span>Your Rights</h2>
+    <h3>All Users</h3>
+    <p>Right to be informed (fulfilled by this policy), right to delete data (Settings → Danger Zone), right to withdraw consent at any time.</p>
+    <h3>EU / EEA / UK (GDPR / UK GDPR)</h3>
+    <div class="rights-grid"><div class="cell">Art 15 — Access</div><div class="cell">Request a copy of your data</div><div class="cell">Art 16 — Rectification</div><div class="cell">Correct inaccurate data</div><div class="cell">Art 17 — Erasure</div><div class="cell">"Right to be forgotten"</div><div class="cell">Art 18 — Restriction</div><div class="cell">Limit how we process your data</div><div class="cell">Art 20 — Portability</div><div class="cell">Receive your data in machine-readable format</div><div class="cell">Art 21 — Object</div><div class="cell">Object to processing based on legitimate interests</div><div class="cell">Art 22 — Automated decisions</div><div class="cell">We do not make automated decisions with legal effect</div></div>
+    <h3>California (CCPA / CPRA)</h3>
+    <p>Right to know, right to delete, right to opt out of sale (we do not sell data), right to non-discrimination, and right to correct inaccurate personal information. Categories collected: identifiers, health/medical information, internet/electronic activity (Firebase analytics). Sold/shared: No.</p>
+    <h3>Brazil (LGPD), Canada (PIPEDA), Australia (Privacy Act)</h3>
+    <p>Users in these jurisdictions have equivalent rights to access, correction, anonymisation, portability, and deletion. Contact <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a>. Australian users may also escalate to the OAIC.</p>
+    <div class="callout">To exercise any of these rights, email <strong>Lisa@TripleMoonGoddess.com</strong>. We will respond within 30 days. Our response will confirm whether your request has been granted or, if denied, explain the reason for denial.</div>
+  </section>
+
+  <section class="policy" id="practitioner">
+    <h2><span class="num">XIII</span>Practitioner App Data</h2>
+    <p>The Integrative Practitioner, Soul Pattern, and Constitutional Health apps are separate paid-tier applications. Their data architecture differs from the individual seeker apps.</p>
+    <h3>What Practitioners Enter</h3>
+    <p>Practitioners enter client birth data (date, time, location) to generate a natal chart and derived outputs. The practitioner also enters a client email address as the client identifier within their account. That email is encrypted on our server with our managed Cloud KMS key at the moment it is saved — the plaintext is removed and never stored unencrypted anywhere. Even if the database were compromised, client email records would be unreadable, because the key is held server-side and never leaves it.</p>
+    <h3>What Practitioners See</h3>
+    <p>The practitioner view surfaces chart-derived outputs: sign placements, house positions, constitutional profile, pattern group scores, and comparison signals. Practitioners do not see raw birth data displayed back to them after chart generation — the chart describes the person through derived outputs, it does not display the underlying date, time, and location as identifying fields.</p>
+    <h3>Client Birth Data</h3>
+    <p>Birth data entered by a practitioner is used solely to calculate the natal chart for that client record. It is encrypted with our managed Cloud KMS key and held in a dedicated, access-controlled vault keyed by the client's anonymous access code — never exposed to the apps and never readable back as raw birth data. A practitioner can reach only the clients assigned to them, enforced server-side. It is not shared with other practitioners, not used for advertising, and not linked to any identity record in the research corpus.</p>
+    <h3>Research Data from Practitioner Sessions</h3>
+    <p>Soul module sessions, pattern scores, comparison signals, and practitioner follow-up feedback may contribute to the TMG longitudinal research corpus. All research records are pseudonymized before inclusion. The pseudonymized record contains pattern-level and astrological signal data only — for example, whether a particular planetary aspect correlates with a reported pattern across a population. No name, email, birth date, birth time, or birth location is included in any published or shared research output. The link between a client record and its pseudonymized research entry is stored separately from the research corpus and is never published.</p>
+    <h3>Encryption</h3>
+    <p>Practitioner client data — client email, clinical notes, and psychological readings — is encrypted at rest with our managed Google Cloud KMS key. Encryption and decryption happen server-side; the key is never held in the practitioner's browser. Access is gated by the practitioner's authenticated account plus ownership of the specific client assignment. See Section IX for full technical detail. (The earlier passphrase-based scheme has been retired; a small amount of data sealed under it before migration is not recoverable.)</p>
+  </section>
+
+  <section class="policy" id="changes">
+    <h2><span class="num">XIV</span>Changes to This Policy</h2>
+    <p>We will update this policy when our data practices change. Material changes will be communicated via an updated notice on the consent screen within the app and an updated effective date at the top of this document. Continued use of the app after a material change constitutes acceptance. Where legally required, we will re-obtain explicit consent.</p>
+  </section>
+
+  <section class="policy" id="contact">
+    <h2><span class="num">XV</span>Contact &amp; Complaints</h2>
+    <p>For any privacy-related question, data request, or complaint:</p>
+    <p>
+      <strong>Triple Moon Goddess</strong><br>
+      Lisa Hagan<br>
+      3654 Thornton Ave, Unit #748<br>
+      Fremont, CA 94536<br>
+      United States<br>
+      Email: <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a>
+    </p>
+    <div class="callout">We will respond to all privacy requests within <strong>30 days</strong>. Our response will confirm whether your request has been granted or, if denied, will explain the reason for denial and provide contact information for further escalation.</div>
+    <p>If you are not satisfied with our response, you have the right to escalate to your local data protection authority:</p>
+    <p>EU/EEA: your national supervisory authority (ICO in UK, CNIL in France, BfDI in Germany) · California: California Privacy Protection Agency (CPPA) · Australia: Office of the Australian Information Commissioner (OAIC)</p>
+  </section>
+
+</div>
+</body>
+</html>
